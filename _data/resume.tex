@@ -1,45 +1,42 @@
 \documentclass[a4paper]{article}
-    \usepackage{fullpage}
-    \usepackage{amsmath}
-    \usepackage{amssymb}
-    \usepackage{textcomp}
-    \usepackage{hyperref}
-    \hypersetup{
-        colorlinks=true,
-        linkcolor=blue,
-        filecolor=cyan,
-        urlcolor=blue,
-    }
-    \usepackage{tikz}
-    \newcommand{\ExternalLink}{%
-        \tikz[x=1.2ex, y=1.2ex, baseline=-0.05ex]{%
-            \begin{scope}[x=1ex, y=1ex]
-                \clip (-0.1,-0.1)
-                    --++ (-0, 1.2)
-                    --++ (0.6, 0)
-                    --++ (0, -0.6)
-                    --++ (0.6, 0)
-                    --++ (0, -1);
-                \path[draw,
-                    line width = 0.5,
-                    rounded corners=0.5]
-                    (0,0) rectangle (1,1);
-            \end{scope}
-            \path[draw, line width = 0.5] (0.5, 0.5)
-                -- (1, 1);
-            \path[draw, line width = 0.5] (0.6, 1)
-                -- (1, 1) -- (1, 0.6);
-            }
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{textcomp}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=cyan,
+    urlcolor=blue,
+}
+\usepackage{tikz}
+\newcommand{\ExternalLink}{%
+    \tikz[x=1.2ex, y=1.2ex, baseline=-0.05ex]{%
+        \begin{scope}[x=1ex, y=1ex]
+            \clip (-0.1,-0.1)
+                --++ (-0, 1.2)
+                --++ (0.6, 0)
+                --++ (0, -0.6)
+                --++ (0.6, 0)
+                --++ (0, -1);
+            \path[draw,
+                line width = 0.5,
+                rounded corners=0.5]
+                (0,0) rectangle (1,1);
+        \end{scope}
+        \path[draw, line width = 0.5] (0.5, 0.5)
+            -- (1, 1);
+        \path[draw, line width = 0.5] (0.6, 1)
+            -- (1, 1) -- (1, 0.6);
         }
-    \usepackage[utf8]{inputenc}
-    \usepackage[T1]{fontenc}
-    \textheight=10in
-    \pagestyle{empty}
-    \raggedright
-    \usepackage[left=0.8in,right=0.8in,bottom=0.8in,top=0.8in]{geometry}
-
-    %\renewcommand{\encodingdefault}{cg}
-%\renewcommand{\rmdefault}{lgrcmr}
+    }
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\textheight=10in
+\pagestyle{empty}
+\raggedright
+\usepackage[left=0.8in,right=0.8in,bottom=0.8in,top=0.8in]{geometry}
 
 \def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
 
@@ -93,10 +90,8 @@
 }
 % END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
 
-    \begin{document}
+\begin{document}
 \vspace*{-40pt}
-
-
 
 %==== Profile ====%
 \vspace*{-10pt}
@@ -107,10 +102,10 @@
 
 %==== Education ====%
 \header{Education}
-\textbf{University of London}\hfill London, UK Online\\
-Bachelor of Science Computer Science \hfill April 2022 - June 2025 Expected\\
+\textbf{University of London}, London, UK Online\\
+Bachelor of Science in Computer Science \hfill Expected April 2022 - June 2025\\
 \begin{itemize} \itemsep 1pt
-	\item Study with students in more than 120 countries around the globe.
+	\item Studying with students in more than 120 countries around the globe.
 \end{itemize}
 \vspace{2mm}
 
@@ -122,52 +117,57 @@ Bachelor of Science Computer Science \hfill April 2022 - June 2025 Expected\\
 \textit{Backend Developer} \hfill Jan 2022 - Present\\
 \vspace{-1mm}
 \begin{itemize} \itemsep 1pt
-	\item Develop and maintain MongoDB database and servers to integrate user-facing elements with server-side logic.
-	\item Support integration with external providers’ API.
+	\item Develop and maintain MongoDB databases and servers to integrate user-facing elements with server-side logic.
+	\item Support integration with external providers’ APIs.
 	\item Optimize the performance of modules and coding blocks.
-	\item Work closely with front-end team and UX/UI designer to analyze requirements and prepare technical specification.
+	\item Work closely with front-end teams and UX/UI designers to analyze requirements and specifications.
 	\item Use AWS for serverless micro-service implementations.
 \end{itemize}
+
 \textbf{Systems Biology and Biomedical Informatics Laboratory\\ University of Nebraska-Lincoln} \hfill Lincoln, NE\\
 \textit{Undergraduate Researcher} \hfill Jan 2019 - Sep 2019\\
 \vspace{-1mm}
 \begin{itemize} \itemsep 1pt
-	\item Received \$2,400 to engage in intensive research working on project \textquotedbl{}Informatics-Guided Approach to Study miRNA Sorting Through Motif Finding\textquotedbl{}.
-	\item Updated existing lab tools to add functionality. For example, I added protein folding on Motif Discovery based on Short Nucleotide Sequences(MDS2) tool which can be found at \url{http://sbbi-panda.unl.edu/MDS4/}.
+	\item Received \$2,400 to engage in intensive research working on the project \textquotedbl{}Informatics-Guided Approach to Study miRNA Sorting Through Motif Finding\textquotedbl{}.
+	\item Updated existing lab tools to add functionality. For example, added protein folding on Motif Discovery based on Short Nucleotide Sequences (MDS2) tool which can be found at \url{http://sbbi-panda.unl.edu/MDS4/}.
 \end{itemize}
+
 \textbf{Molecular Plant Virology Laboratory – University of Nebraska-Lincoln} \hfill Lincoln, NE\\
 \textit{Undergraduate Bioinformatics Research Assistant} \hfill Sep 2017 - Nov 2018\\
 \vspace{-1mm}
 \begin{itemize} \itemsep 1pt
-	\item Developed computational tools to analyze genomic, transcriptomic, small RNA, and proteomic data
+	\item Developed computational tools to analyze genomic, transcriptomic, small RNA, and proteomic data.
 	\item Used and learned existing popular bioinformatics tools.
 	\item Interpreted and analyzed genomic and sequencing data.
 	\item Worked in teams through shared remote clusters.
 \end{itemize}
+
 \textbf{Gudmundsen Sandhills Laboratory - Nebraska Extension} \hfill North Platte, NE\\
 \textit{Summer Intern} \hfill May 2017 - July 2017\\
 \vspace{-1mm}
 \begin{itemize} \itemsep 1pt
 	\item Checked the moisture level of wheat and corn to verify their readiness for harvest.
-	\item Collected data on cows feeding patterns on different forage types.
+	\item Collected data on cow feeding patterns on different forage types.
 	\item Presented a poster on cows’ preference of forage type.
 \end{itemize}
 
-\header{Skills}
+\header{Skills (Years of Experience)}
 \begin{tabular}{ l l }
-	Programming\\
-	Computer Networking\\
+	Programming & Python (5), Go (3), JavaScript (4), SQL (4) \\
+	Technologies & AWS (2), MongoDB (2), Docker (1.5), Kubernetes (0.5), \\
+	 & Git (5), GitHub (5), JIRA (2) \\
+	Bioinformatics Tools & NCBI (0.5), Biopython (0.5), Bioconductor (0.5) \\
 \end{tabular}
 \vspace{2mm}
 
 \header{Projects}
 {\textbf{Packdiff \href{https://github.com/duxum/packdiff}{GitHub \textsuperscript{\ExternalLink}}}} {\sl Go, Git}\\
-A command-line tool to see changed/added/removed symbols between different versions Go programs.\\
+A command-line tool to see changed/added/removed symbols between different versions of Go programs.\\
 \vspace*{2mm}
 
 \header{Awards}
 \textbf{UCARE Award - University of Nebraska-Lincoln \href{https://unl.meritpages.com/stories/Christian-Dukunde-of-Lincoln-receives-stipend-for-summer-research-project-at-Nebraska-/14629605}{Merit Pages \textsuperscript{\ExternalLink}}} \hfill May 2019\\
-Received stipend to work on project \textquotedbl{}Informatics-Guided Approach to Study miRNA Sorting Through Motif Finding\textquotedbl{}.
+Received stipend to work on the project \textquotedbl{}Informatics-Guided Approach to Study miRNA Sorting Through Motif Finding\textquotedbl{}.
 \vspace*{2mm}
 
 \header{Leadership Experience}
@@ -181,5 +181,4 @@ Received stipend to work on project \textquotedbl{}Informatics-Guided Approach t
 	\item Contributed to organizing bi-monthly meetings to track events.
 \end{itemize}
 
-\
 \end{document}
